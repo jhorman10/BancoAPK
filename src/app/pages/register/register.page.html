@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar text-center color="success">
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+  
+<img src="../../../assets/registro.png" width="150">
+
+  <br><br>
+  <form (ngSubmit)="registrarCliente(resgitroF); resgitroF.reset()" #resgitroF="ngForm">
+
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="firstname" [(ngModel)]="usuario.nombre" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" name="lastname" [(ngModel)]="usuario.apellido" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Número de Identificación</ion-label>
+      <ion-input type="number" #identificación name="identification" [(ngModel)]="usuario.identificacion" required>
+      </ion-input>
+    </ion-item>
+    <!-- <div *ngIf="identificación.value == cliente.identification">
+      <label color="danger">el número de documento ya existe </label>
+    </div> -->
+    <ion-item text-center style="background-color: #FAEDCA !important; color: #7EBC89;">
+      <ion-label>Fecha de nacimiento</ion-label>
+      <ion-datetime display-format="DD-MM-YYYY" name="birthdate" [(ngModel)]="usuario.fechaNacimiento" required>
+      </ion-datetime>
+    </ion-item>
+    <br><br>
+    <a routerLink="/login" style="text-decoration: none; color: #7EBC89;">
+      ¿ya tienes una cuenta? <br><b>Inicia Sesión Aquí</b>
+    </a>
+    <br><br><br>
+    <ion-button color="primary" type="submit"> Registrarse </ion-button>
+  </form>
+
+</ion-content>
+
+<label style="color: #F2C078; background-color: #FAEDCA"><b>Powered By: CodeScriptes &copy;</b></label>

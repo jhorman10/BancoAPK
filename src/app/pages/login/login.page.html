@@ -1,0 +1,31 @@
+<ion-content text-center>
+
+  <img src="../../../assets/img.svg" width="260">
+
+  <h1 style="margin-top: 5%" >Inicio de Sesión</h1>
+
+  <form (ngSubmit)="login(); loginF.reset()" #loginF="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input required name="nombre" type="text" [(ngModel)]="userLogin.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Número de identificación</ion-label>
+      <ion-input required name="identificacion" type="number" [(ngModel)]="userLogin.identificacion"></ion-input>
+    </ion-item>
+
+    <br><br>
+
+    <a routerLink="/register" style="text-decoration: none; color: #7EBC89;">
+       ¿No tienes cuenta? <br>
+        <b>Registrate aquí</b>
+    </a>
+    
+    <br><br>
+
+    <ion-button color="primary" type="submit">Iniciar Sesión</ion-button>
+
+  </form>
+
+</ion-content>
+<label style="color: #F2C078; background-color: #FAEDCA"><b>Powered By: CodeScriptes &copy;</b></label>
