@@ -19,3 +19,7 @@
 BancoApp\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk
 
 # capturas de pantalla
+https://github.com/jhorman10/BancoAPK/blob/master/src/assets/capturas/11.22.14%20PM%20(1).jpeg
+https://github.com/jhorman10/BancoAPK/blob/master/src/assets/capturas/11.22.14%20PM%20(2).jpeg
+https://github.com/jhorman10/BancoAPK/blob/master/src/assets/capturas/11.22.14%20PM%20(3).jpeg
+https://github.com/jhorman10/BancoAPK/blob/master/src/assets/capturas/11.22.14%20PM.jpeg
